@@ -31,6 +31,12 @@
 .navbar__logo-title--purple {
   color: #794CFF;
 }
+.navbar__logo-mob-burger {
+  display: none;
+}
+.navbar__logo-close {
+  display: none;
+}
 .navbar__logo-mob-menu {
   display: none;
 }
@@ -514,7 +520,6 @@
   }
   .navbar__logo-close {
     display: none;
-    filter: invert(100%);
   }
   .navbar__menu-nav {
     display: none;
@@ -895,15 +900,8 @@
   .navbar__logo-mob-burger {
     display: block;
   }
-  .navbar__logo-mob-burger--hide {
-    display: none;
-  }
   .navbar__logo-close {
     display: none;
-  }
-  .navbar__logo-close--show {
-    display: block;
-    filter: invert(100%);
   }
   .navbar__menu-nav {
     display: none;
@@ -1100,6 +1098,12 @@
 }
 @media screen and (min-width: 1565px) {
   .navbar__mob-nav {
+    display: none;
+  }
+  .navbar__logo-mob-burger {
+    display: none;
+  }
+  .navbar__logo-close {
     display: none;
   }
   p {

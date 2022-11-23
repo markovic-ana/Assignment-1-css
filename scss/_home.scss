@@ -30,6 +30,15 @@
         }
     }
 
+      &__logo-mob-burger {
+            display: none;
+        }
+
+        &__logo-close {
+            display: none;
+        }
+
+
 
     &__logo-mob-menu {
         display: none;
@@ -42,6 +51,8 @@
     &__mob-nav {
         display: none;
     }
+
+     
 
 
     &__menu-nav {

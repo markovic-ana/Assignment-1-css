@@ -533,7 +533,7 @@
 
 
 
-    }
+    
 
     &__menu-nav {
         display: none;
@@ -596,6 +596,7 @@
             height: 8px;
         }
     }
+}
 
     .hero {
         background-position: 50% -600px;
@@ -792,6 +793,15 @@
         &__mob-nav {
             display: none;
         }
+
+          &__logo-mob-burger {
+            display: none;
+        }
+
+        &__logo-close {
+            display: none;
+        }
+
     }
 
 
