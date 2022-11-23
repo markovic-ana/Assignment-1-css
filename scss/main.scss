@@ -1,23 +1,20 @@
- @import 'config';
- @import 'home';
- @import 'responsive';
+@import "config";
+@import "home";
+@import "responsive";
 
-
-section{
-    padding: 3rem 6rem;
+section {
+  padding: 3rem 6rem;
 }
 
 a {
-    text-decoration: none;
-    cursor: pointer;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
-p{
-    line-height: 1.5rem;
+p {
+  line-height: 1.5rem;
 }
-
-

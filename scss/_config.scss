@@ -1,44 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
 
-$primary-font-color: #35414B;
-$secondary-font-color: #4E5A65;
-$detail-color: #794CFF;
-$section-color: #FBFAFE;
-$font-family: 'Inter', sans-serif;
-$header-font-family: 'Josefin Sans', sans-serif;
+$primary-font-color: #35414b;
+$secondary-font-color: #4e5a65;
+$detail-color: #794cff;
+$section-color: #fbfafe;
+$font-family: "Inter", sans-serif;
+$header-font-family: "Josefin Sans", sans-serif;
 $regular-weight: 400;
 $medium-weight: 500;
 $semibold-weight: 600;
 $bold-weight: 700;
-$normal-font-size: '16px';
+$normal-font-size: "16px";
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-size: $normal-font-size;
-    font-family: $font-family;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: $normal-font-size;
+  font-family: $font-family;
 }
 
 @mixin transition-ease {
-    transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 @mixin media-xs {
-    @media only screen and (max-width:767px) {
-        @content
-    }
+  @media only screen and (max-width: 767px) {
+    @content;
+  }
 }
 
 @mixin media-md {
-    @media only screen and (min-width: 768px) and (max-width:1023px) {
-        @content
-    }
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    @content;
+  }
 }
 
 @mixin media-xl {
-    @media screen and (min-width: 1565px) {
-        @content
-    }
+  @media screen and (min-width: 1565px) {
+    @content;
+  }
 }
