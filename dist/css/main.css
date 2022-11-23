@@ -1112,6 +1112,13 @@
   h4 {
     font-size: 1.2rem;
   }
+  .hero .container {
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
   .hero__paragraph {
     width: 40%;
     line-height: 2rem;
