@@ -1,5 +1,5 @@
 .navbar {
-  width: 100%;
+  // width: 100%;
   background-color: #fbfafe;
   justify-content: center;
 
@@ -46,7 +46,7 @@
   }
 
   &__menu-nav {
-    width: 80vw;
+    // width: 80vw;
     display: flex;
     justify-content: space-between;
 
@@ -106,13 +106,17 @@
 }
 
 .hero {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   background: url("/dist/images/background-elipse.svg") center top no-repeat;
   background-size: cover;
   background-position: 50% -690px;
+
+  .hero-container {
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
   &__btn-container {
     position: relative;
@@ -230,18 +234,15 @@
   background-color: $section-color;
   border-top: 1px solid #f0ebfa;
   border-bottom: 1px solid #f0ebfa;
-  display: flex;
-  justify-content: space-between;
-  gap: 2rem;
 
-  img {
-    max-width: 50vw;
+  &-container {
+    display: flex;
+    justify-content: space-between;
   }
 
   &__items {
     display: flex;
     flex-direction: column;
-    max-width: 50vw;
   }
 
   &__item {
@@ -334,15 +335,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 2rem;
-
-  img {
-    max-width: 50vw;
-  }
 
   &__text {
-    margin-right: 1rem;
-
     &-heading {
       font-weight: $semibold-weight;
       font-size: 3rem;
@@ -389,17 +383,17 @@
     font-size: 1.1rem;
     margin-bottom: 3rem;
     color: $secondary-font-color;
+    width: 50%;
   }
 
   &__items {
-    width: 80vw;
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 6.5rem;
   }
 
   &__item {
-    width: 30%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -423,7 +417,7 @@
 
     &:hover {
       padding-top: 1rem;
-      width: 30%;
+      // width: 30%;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -436,7 +430,7 @@
     color: #fff;
     display: flex;
     flex-direction: row;
-    min-width: 90vw;
+    width: 100%;
     justify-content: space-evenly;
     align-items: center;
     padding: 4rem;
@@ -444,7 +438,7 @@
   }
 
   &__store-heading {
-    max-width: 50%;
+    width: 35%;
     font-weight: $semibold-weight;
     line-height: 3rem;
     font-size: 2rem;
@@ -452,7 +446,7 @@
 
   &__store-badges {
     display: flex;
-    width: 50%;
+    width: 35%;
     justify-content: space-evenly;
   }
 }
@@ -464,7 +458,6 @@
   flex-direction: column;
 
   &-links__nav {
-    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -506,7 +499,7 @@
         &-image {
           border: 1px solid #fff;
           border-radius: 11px;
-          width: 100%;
+          // width: 100%;
         }
       }
 

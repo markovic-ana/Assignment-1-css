@@ -9,7 +9,6 @@
 }
 
 .navbar {
-  width: 100%;
   background-color: #fbfafe;
   justify-content: center;
 }
@@ -47,7 +46,6 @@
   display: none;
 }
 .navbar__menu-nav {
-  width: 80vw;
   display: flex;
   justify-content: space-between;
 }
@@ -94,13 +92,16 @@
 }
 
 .hero {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   background: url("/dist/images/background-elipse.svg") center top no-repeat;
   background-size: cover;
   background-position: 50% -690px;
+}
+.hero .hero-container {
+  max-width: 1400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .hero__btn-container {
   position: relative;
@@ -206,17 +207,14 @@
   background-color: #fbfafe;
   border-top: 1px solid #f0ebfa;
   border-bottom: 1px solid #f0ebfa;
+}
+.survey-container {
   display: flex;
   justify-content: space-between;
-  gap: 2rem;
-}
-.survey img {
-  max-width: 50vw;
 }
 .survey__items {
   display: flex;
   flex-direction: column;
-  max-width: 50vw;
 }
 .survey__item {
   border-left: 8px solid #fbfafe;
@@ -292,13 +290,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 2rem;
-}
-.chart img {
-  max-width: 50vw;
-}
-.chart__text {
-  margin-right: 1rem;
 }
 .chart__text-heading {
   font-weight: 600;
@@ -340,15 +331,15 @@
   font-size: 1.1rem;
   margin-bottom: 3rem;
   color: #4e5a65;
+  width: 50%;
 }
 .testamonials__items {
-  width: 80vw;
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 6.5rem;
 }
 .testamonials__item {
-  width: 30%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -369,7 +360,6 @@
 }
 .testamonials__item:hover {
   padding-top: 1rem;
-  width: 30%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -380,21 +370,21 @@
   color: #fff;
   display: flex;
   flex-direction: row;
-  min-width: 90vw;
+  width: 100%;
   justify-content: space-evenly;
   align-items: center;
   padding: 4rem;
   border-radius: 1rem;
 }
 .testamonials__store-heading {
-  max-width: 50%;
+  width: 35%;
   font-weight: 600;
   line-height: 3rem;
   font-size: 2rem;
 }
 .testamonials__store-badges {
   display: flex;
-  width: 50%;
+  width: 35%;
   justify-content: space-evenly;
 }
 
@@ -405,7 +395,6 @@
   flex-direction: column;
 }
 .footer-links__nav {
-  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -440,7 +429,6 @@
 .footer-links__nav-list-item-image {
   border: 1px solid #fff;
   border-radius: 11px;
-  width: 100%;
 }
 .footer-links__nav-list-badges {
   padding-bottom: 1.5rem;
@@ -973,19 +961,17 @@
   .hero__img {
     width: 80vw;
   }
-  .survey {
+  .survey-container {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 1.5rem 2rem;
   }
   .survey__image {
-    width: 80vw;
     margin-bottom: 2rem;
     margin-top: 1rem;
   }
   .survey__items {
-    width: 80%;
     margin-left: 0;
   }
   .cards h2 {
@@ -1112,7 +1098,11 @@
   h4 {
     font-size: 1.2rem;
   }
-  .hero .container {
+  .hero {
+    display: flex;
+    justify-content: center;
+  }
+  .hero .hero-container {
     max-width: 1400px;
     display: flex;
     flex-direction: column;
@@ -1130,12 +1120,25 @@
     font-size: 1.2rem;
   }
   .survey {
+    display: flex;
+    justify-content: center;
+  }
+  .survey-container {
+    max-width: 1400px;
+    display: flex;
     justify-content: space-between;
+  }
+  .survey img {
+    width: 45%;
+  }
+  .survey__items {
+    width: 40%;
   }
   .survey h3 {
     font-size: 1.3rem;
   }
   .cards__grid {
+    max-width: 1400px;
     padding: 0 1rem;
   }
   .cards h3 {
@@ -1146,18 +1149,49 @@
     font-size: 1.2rem;
   }
   .chart {
-    justify-content: space-around;
+    display: flex;
+    justify-content: center;
+  }
+  .chart-container {
+    max-width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .chart h2 {
+    width: 60%;
   }
   .chart p {
-    width: 60%;
+    width: 70%;
     line-height: 2rem;
   }
   .chart a {
     font-size: 1.2rem;
   }
+  .testamonials-container {
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .testamonials__paragraph {
     font-size: 1.2rem;
-    width: 40%;
+    width: 55%;
+  }
+  .footer-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .footer-bottom {
+    display: flex;
+    justify-content: center;
+  }
+  .footer-bottom-container {
+    max-width: 1400px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
   }
   .footer-bottom p {
     font-size: 1rem;
