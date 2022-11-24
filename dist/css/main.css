@@ -541,6 +541,7 @@
   }
   .navbar__mob-nav {
     position: absolute;
+    top: 5rem;
     display: block;
     z-index: 99999;
     transform: translateY(-200%);
@@ -588,7 +589,7 @@
   .hero {
     width: 100vw;
     background: none;
-    padding: 2rem 1rem;
+    padding: 0;
     display: flex;
     align-items: center;
   }
@@ -665,6 +666,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .survey-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .survey-container {
+    display: flex;
+    flex-direction: column;
   }
   .survey__image {
     width: 90vw;
@@ -745,6 +756,10 @@
     justify-content: center;
     align-items: center;
     width: 100vw;
+  }
+  .chart-container {
+    display: flex;
+    flex-direction: column;
   }
   .chart img {
     width: 90vw;

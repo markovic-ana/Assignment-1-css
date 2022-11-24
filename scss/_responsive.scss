@@ -52,6 +52,7 @@
 
     &__mob-nav {
       position: absolute;
+      top: 5rem;
       display: block;
       z-index: 99999;
       transform: translateY(-200%);
@@ -108,9 +109,12 @@
   .hero {
     width: 100vw;
     background: none;
-    padding: 2rem 1rem;
+    padding: 0;
     display: flex;
     align-items: center;
+
+    &-container {
+    }
 
     &__btn-container {
       display: flex;
@@ -199,6 +203,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    &-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &-container {
+      display: flex;
+      flex-direction: column;
+    }
 
     &__image {
       width: 90vw;
@@ -297,6 +313,11 @@
     justify-content: center;
     align-items: center;
     width: 100vw;
+
+    &-container {
+      display: flex;
+      flex-direction: column;
+    }
 
     img {
       width: 90vw;
