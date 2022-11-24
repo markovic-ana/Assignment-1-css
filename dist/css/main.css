@@ -9,6 +9,7 @@
 }
 
 .navbar {
+  width: 100%;
   background-color: #fbfafe;
   justify-content: center;
 }
@@ -864,7 +865,7 @@
     display: none;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   .navbar__container {
     justify-content: space-around;
     padding: 2.8rem 0 1rem 0;
@@ -1082,7 +1083,22 @@
     padding: 2rem;
   }
 }
-@media screen and (min-width: 1565px) {
+@media screen and (min-width: 1400px) {
+  .navbar {
+    display: flex;
+    justify-content: center;
+  }
+  .navbar__container {
+    max-width: 1400px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .navbar__menu-nav {
+    display: flex;
+    width: 66%;
+    justify-content: space-between;
+  }
   .navbar__mob-nav {
     display: none;
   }

@@ -752,6 +752,22 @@
 
 @include media-xl {
   .navbar {
+    display: flex;
+    justify-content: center;
+
+    &__container {
+      max-width: 1400px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__menu-nav {
+      display: flex;
+      width: 66%;
+      justify-content: space-between;
+    }
+
     &__mob-nav {
       display: none;
     }

@@ -32,13 +32,13 @@ $normal-font-size: "16px";
 }
 
 @mixin media-md {
-  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
     @content;
   }
 }
 
 @mixin media-xl {
-  @media screen and (min-width: 1565px) {
+  @media screen and (min-width: 1400px) {
     @content;
   }
 }
