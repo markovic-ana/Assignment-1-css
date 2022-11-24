@@ -38,7 +38,7 @@ $normal-font-size: "16px";
 }
 
 @mixin media-xl {
-  @media screen and (min-width: 1400px) {
+  @media screen and (min-width: 1474px) {
     @content;
   }
 }

@@ -144,6 +144,7 @@
   margin-top: 1.5rem;
 }
 .hero__paragraph {
+  width: 60%;
   text-align: center;
   color: #4e5a65;
   margin-bottom: 1.5rem;
@@ -212,6 +213,10 @@
 .survey-container {
   display: flex;
   justify-content: space-between;
+  gap: 2rem;
+}
+.survey img {
+  width: 56%;
 }
 .survey__items {
   display: flex;
@@ -288,9 +293,19 @@
   background-color: #fbfafe;
   border-top: 1px solid #f0ebfa;
   border-bottom: 1px solid #f0ebfa;
+}
+.chart-container {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  gap: 2rem;
+}
+.chart img {
+  width: 100%;
+}
+.chart__text {
+  width: 50%;
 }
 .chart__text-heading {
   font-weight: 600;
@@ -315,6 +330,11 @@
 }
 
 .testamonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.testamonials-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -385,8 +405,7 @@
 }
 .testamonials__store-badges {
   display: flex;
-  width: 35%;
-  justify-content: space-evenly;
+  gap: 1rem;
 }
 
 .footer {
@@ -462,6 +481,12 @@
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   font-size: 0.9rem;
   color: #d9dbe1;
+}
+.footer-bottom-container {
+  max-width: 1400px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 .footer-bottom__social-links-list {
   display: flex;
@@ -1083,7 +1108,7 @@
     padding: 2rem;
   }
 }
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1474px) {
   .navbar {
     display: flex;
     justify-content: center;
@@ -1144,9 +1169,6 @@
     display: flex;
     justify-content: space-between;
   }
-  .survey img {
-    width: 45%;
-  }
   .survey__items {
     width: 40%;
   }
@@ -1175,7 +1197,7 @@
     align-items: center;
   }
   .chart h2 {
-    width: 60%;
+    width: 62%;
   }
   .chart p {
     width: 70%;
