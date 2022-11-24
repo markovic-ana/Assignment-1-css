@@ -594,19 +594,19 @@
   }
 
   .survey {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1.5rem 2rem;
+    &-container {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 1.5rem 2rem;
+    }
 
     &__image {
-      width: 80vw;
       margin-bottom: 2rem;
       margin-top: 1rem;
     }
 
     &__items {
-      width: 80%;
       margin-left: 0;
     }
   }
@@ -774,7 +774,9 @@
   }
 
   .hero {
-    .container {
+    display: flex;
+    justify-content: center;
+    .hero-container {
       max-width: 1400px;
       display: flex;
       flex-direction: column;
@@ -797,7 +799,21 @@
   }
 
   .survey {
-    justify-content: space-between;
+    display: flex;
+    justify-content: center;
+    &-container {
+      max-width: 1400px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    img {
+      width: 45%;
+    }
+
+    &__items {
+      width: 40%;
+    }
 
     h3 {
       font-size: 1.3rem;
@@ -806,6 +822,7 @@
 
   .cards {
     &__grid {
+      max-width: 1400px;
       padding: 0 1rem;
     }
 
@@ -820,10 +837,21 @@
   }
 
   .chart {
-    justify-content: space-around;
+    display: flex;
+    justify-content: center;
+    &-container {
+      max-width: 1400px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    h2 {
+      width: 60%;
+    }
 
     p {
-      width: 60%;
+      width: 70%;
       line-height: 2rem;
     }
 
@@ -833,9 +861,16 @@
   }
 
   .testamonials {
+    &-container {
+      max-width: 1400px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
     &__paragraph {
       font-size: 1.2rem;
-      width: 40%;
+      width: 55%;
     }
   }
 
