@@ -560,6 +560,32 @@
     align-items: center;
     border-bottom: 5px solid #794cff;
   }
+  .navbar__mob-nav-links-dropdown {
+    width: 100%;
+    background-color: #fff;
+    padding-top: 0;
+    margin-bottom: -1.5rem;
+    display: none;
+  }
+  .navbar__mob-nav-links-dropdown li {
+    color: #35414b;
+    opacity: 0.7;
+    font-size: 1.2rem;
+    padding-top: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .navbar__mob-nav-links-dropdown li:first-child {
+    border-top: 1px solid #794cff;
+  }
+  .navbar__mob-nav-links-dropdown li:hover {
+    transition: all 0.5s ease-in-out;
+    color: #794cff;
+  }
+  .navbar__mob-nav-show-dropdown {
+    display: block;
+  }
   .navbar__mob-nav-link {
     opacity: 0.7;
     padding: 2rem;
