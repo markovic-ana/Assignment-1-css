@@ -18,6 +18,7 @@
   align-items: center;
 }
 .navbar__container {
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -214,9 +215,6 @@
   display: flex;
   justify-content: space-between;
   gap: 2rem;
-}
-.survey img {
-  width: 56%;
 }
 .survey__items {
   display: flex;
@@ -1022,6 +1020,10 @@
     padding: 2rem 4rem;
     width: 100vw;
   }
+  .chart-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
   .chart img {
     margin-top: 2rem;
   }
@@ -1038,7 +1040,6 @@
   }
   .chart__text p {
     text-align: center;
-    width: 80vw;
   }
   .chart__text a {
     margin-bottom: 2rem;
@@ -1050,7 +1051,6 @@
   }
   .testamonials p {
     text-align: center;
-    width: 80vw;
   }
   .testamonials h4 {
     text-align: center;

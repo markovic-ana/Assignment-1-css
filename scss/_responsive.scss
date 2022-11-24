@@ -638,6 +638,11 @@
     padding: 2rem 4rem;
     width: 100vw;
 
+    &-container {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
     img {
       margin-top: 2rem;
     }
@@ -656,7 +661,6 @@
 
       p {
         text-align: center;
-        width: 80vw;
       }
 
       a {
@@ -672,7 +676,6 @@
 
     p {
       text-align: center;
-      width: 80vw;
     }
 
     h4 {
